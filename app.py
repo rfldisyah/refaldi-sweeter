@@ -13,6 +13,7 @@ from flask import (
 )
 from pymongo import MongoClient
 import jwt
+from jwt.exceptions import ExpiredSignatureError
 from datetime import datetime, timedelta
 import hashlib
 
